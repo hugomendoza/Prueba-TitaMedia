@@ -1,0 +1,16 @@
+{
+  "items" : [
+    {
+      "img": "img/image-big.png",
+      "alt" : "slide 1"
+    },
+    {
+      "img": "img/image-big2.png",
+      "alt" : "slide 2"
+    },
+    {
+      "img": "img/image-big3.jpg",
+      "alt" : "slide 3"
+    }
+  ]
+}

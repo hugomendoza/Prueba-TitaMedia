@@ -4,7 +4,7 @@
   --text-color: rgb(164, 164, 164);
   --nav-font: 'Arimo', sans-serif;
   --main-text: 'Noto Sans', sans-serif;
-  --brand-color: rgb(48, 97, 88);
+  --brand-color: rgb(16, 150, 125);
 }
 
 .container {
@@ -60,14 +60,13 @@ h3 {
 
 .info > .info-text, .info-img {
   display: inline-block;
-  background-color: blue;
 }
 
 .info-text {
   width: 60%;
   display: inline-block;
-  padding: 50px;
   text-align: center;
+  padding: 50px 0px;
 }
 
 .info-text h4 {
@@ -104,11 +103,10 @@ h3 {
 
 .info-img {
   width: 25%;
+  vertical-align: bottom;
 }
 
 .info-img img {
-  height: 50%;
-  margin: 0px;
-  display: block;
-  bottom: 0px;
+  width: 150%;
+  float: left;
 }
