@@ -4,6 +4,7 @@
   --text-color: rgb(164, 164, 164);
   --nav-font: 'Arimo', sans-serif;
   --main-text: 'Noto Sans', sans-serif;
+  --brand-color: rgb(48, 97, 88);
 }
 
 .container {
@@ -59,12 +60,46 @@ h3 {
 
 .info > .info-text, .info-img {
   display: inline-block;
-  background-color: blueviolet;
+  background-color: blue;
 }
 
 .info-text {
-  width: 70%;
+  width: 60%;
   display: inline-block;
+  padding: 50px;
+  text-align: center;
+}
+
+.info-text h4 {
+  font-family: var(--main-text);
+  font-size: 1.5rem;
+}
+
+.info-text hr {
+  border: 1px solid var(--brand-color);
+  width: 45%;
+}
+
+.info-text h5 {
+  font-family: var(--main-text);
+  font-size: 1rem;
+}
+
+.info-text p {
+  font-family: var(--main-text);
+  color: var(--text-color);
+  text-align: justify;
+  line-height: 1.6rem;
+}
+
+.info-text > .link-info {
+  text-align: center;
+}
+
+.link-info a {
+  color: var(--brand-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--brand-color);
 }
 
 .info-img {
@@ -72,6 +107,8 @@ h3 {
 }
 
 .info-img img {
-  width: 100%;
-  display: inline-block;
+  height: 50%;
+  margin: 0px;
+  display: block;
+  bottom: 0px;
 }
