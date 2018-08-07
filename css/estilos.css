@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Noto+Sans:400,700');
+
+:root {
+  --text-color: rgb(164, 164, 164);
+  --nav-font: 'Arimo', sans-serif;
+  --main-text: 'Noto Sans', sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.container > header > div {
+  display: inline-block;
+}
+
+header {
+  padding: 30px 0px;
+}
+
+.company-logo img {
+  width: 80%;
+  padding: 10px;
+}
+
+.nav {
+  float: right;
+}
+
+.nav > ul > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav > ul > li > a {
+  margin: 20px 0px;
+  font-family: var(--nav-font);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: 30px;
+}
+
+.slide img {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: -1;;
+}
+
+h3 {
+  position: absolute;
+  margin: -400px 0px;
+  color: white;
+  font-family: var(--main-text);
+  font-weight: 700;
+}
+
+.info > .info-text, .info-img {
+  display: inline-block;
+  background-color: blueviolet;
+}
+
+.info-text {
+  width: 70%;
+  display: inline-block;
+}
+
+.info-img {
+  width: 25%;
+}
+
+.info-img img {
+  width: 100%;
+  display: inline-block;
+}
