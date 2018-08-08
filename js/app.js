@@ -1,25 +1,37 @@
-function loadJSON(file, callback) {   
+var jsonFile = "js/data.js";
+var len = image_data.length;
 
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'imagenes.json', true); // Replace 'my_data' with the path to your file
-  xobj.onreadystatechange = function () {
-        if (xobj.readyState == 4 && xobj.status == "200") {
-          // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-          callback(xobj.responseText);
-        }
-  };
-  xobj.send(null);  
+for (var i = 0; i < len; i++) {
+  var slideImg = image_data[i];
+  var post=document.createElement('div');
+  post.className = "mySlides fade"
+  var img = document.createElement("img");
+  img.src = slideImg.folder;
+  var foo = document.getElementById("slider");
+  foo.appendChild(post);
+  post.appendChild(img);
 }
 
+var slideIndex = 0;
+showSlides();
 
-function load() {
-  
-  loadJSON("data.json", function(response) {
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
 
-      var actual_JSON = JSON.parse(response);
-      console.log(actual_JSON);
-  });
-  
-  
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+      x.className += " responsive";
+  } else {
+      x.className = "nav";
+  }
 }
